@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select your Gender"
+        android:textStyle="bold"
+        android:textColorHint="#000000"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="25dp"
+        android:textSize="40dp"/>
+
+    <!-- add RadioGroup which contain the many RadioButton-->
+    <RadioGroup
+        android:layout_marginTop="100dp"
+        android:id="@+id/groupradio"
+        android:layout_marginLeft="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <!-- In RadioGroup create the 1 Radio Button-->
+        <!-- like this we will add some more Radio Button-->
+        <RadioButton
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radia_id1"
+            android:text="Male"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="30dp"/>
+
+        <RadioButton
+            android:id="@+id/radia_id2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/groupradio"
+            android:text="Female"
+            android:textColor="#000000"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+    </RadioGroup>
+
+    <!-- add button For Submit the Selected item-->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/submit"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="230dp"
+        />
+
+    <!-- add clear button for clear the selected item-->
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="200dp"
+        android:text="Clear"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
